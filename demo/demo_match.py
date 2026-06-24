@@ -455,7 +455,7 @@ def parse_args():
     parser.add_argument("--upsample_w", default=1152, type=int)
 
     # Matching and RANSAC settings.
-    parser.add_argument("--num_matches", default=10000, type=int, help="Number of RoMa matches to sample.")
+    parser.add_argument("--num_matches", default=2000, type=int, help="Number of RoMa matches to sample.")
     parser.add_argument("--conf_thr", default=0.05, type=float, help="Confidence threshold before RANSAC.")
     parser.add_argument("--ransac_thr", default=5.0, type=float, help="RANSAC reprojection threshold in pixels.")
 
