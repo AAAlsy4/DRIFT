@@ -2,7 +2,7 @@
 Batch RoMa UAV--satellite registration for 20 image pairs.
 
 Input:
-    python demo/batch_20_pairs.py --uav_dir data/uav --sat_dir data/sat
+    python demo/batch_pairs.py --uav_dir data/uav --sat_dir data/sat
 
 Outputs:
     batch_results.csv     per-pair metrics
@@ -309,7 +309,7 @@ def parse_args():
     parser.add_argument("--sat_dir", type=str, default=None, help="Satellite image directory, paired by sorted order.")
 
     parser.add_argument("--output_dir", default="result/batch_20", type=str)
-    parser.add_argument("--num_pairs", default=20, type=int)
+    parser.add_argument("--num_pairs", default=1000, type=int)
 
     # Keep the same RoMa settings as demo_match.py.
     parser.add_argument("--coarse_res", default=560, type=int)
