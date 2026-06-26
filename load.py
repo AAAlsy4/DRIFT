@@ -5,7 +5,7 @@ from argparse import ArgumentParser
 def parse_args():
     parser = ArgumentParser(description="Load dataset.")
     parser.add_argument("--src_root", required=True, type=str)
-    parser.add_argument("--num_pairs", default=2000, type=int, help="Number of pictures")
+    parser.add_argument("--num_pairs", default=1000, type=int, help="Number of pictures")
 
     return parser.parse_args()
 
