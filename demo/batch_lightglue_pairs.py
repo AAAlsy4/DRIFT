@@ -495,7 +495,7 @@ def parse_args():
     )
 
     parser.add_argument("--output_dir", type=str, default="result/lightglue_batch")
-    parser.add_argument("--num_pairs", type=int, default=20)
+    parser.add_argument("--num_pairs", type=int, default=1000)
 
     parser.add_argument(
         "--features",

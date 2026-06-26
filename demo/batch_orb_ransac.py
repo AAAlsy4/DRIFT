@@ -271,7 +271,7 @@ def parse_args():
 
     parser.add_argument("--sat_dir", type=str, default=None, help="Satellite image directory.")
     parser.add_argument("--output_dir", default="result/orb_ransac", type=str)
-    parser.add_argument("--num_pairs", default=20, type=int)
+    parser.add_argument("--num_pairs", default=1000, type=int)
 
     # ORB 参数
     parser.add_argument("--nfeatures", default=5000, type=int, help="Maximum number of ORB keypoints.")

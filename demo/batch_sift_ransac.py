@@ -259,7 +259,7 @@ def parse_args():
 
     parser.add_argument("--sat_dir", type=str, default=None, help="Satellite image directory.")
     parser.add_argument("--output_dir", default="result/sift_ransac", type=str)
-    parser.add_argument("--num_pairs", default=20, type=int)
+    parser.add_argument("--num_pairs", default=1000, type=int)
 
     # SIFT 参数
     parser.add_argument("--nfeatures", default=2000, type=int, help="Maximum number of SIFT keypoints.")
