@@ -515,7 +515,7 @@ def parse_args():
     return parser.parse_args()
 
 
-def main():
+def main() -> None:
     args = parse_args()
 
     Path(args.output_dir).mkdir(parents=True, exist_ok=True)

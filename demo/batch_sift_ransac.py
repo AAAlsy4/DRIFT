@@ -274,7 +274,7 @@ def parse_args():
     return parser.parse_args()
 
 
-def main():
+def main() -> None:
     args = parse_args()
 
     if args.uav_dir is not None and args.sat_dir is None:
